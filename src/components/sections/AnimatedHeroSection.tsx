@@ -59,21 +59,19 @@ export const AnimatedHeroSection = () => {
                 className="relative rounded-full ring-4 ring-white/20 backdrop-blur-sm"
               />
             </motion.div>
-          </FloatingElements>
-
-          {/* Main Heading with Typewriter Effect */}
+          </FloatingElements>          {/* Main Heading with Typewriter Effect */}
           <div className="mb-6">
             <TextReveal delay={0.5}>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-purple-200">
-                  Michał Paśko
+                  Web Developer Wrocław
                 </span>
               </h1>
             </TextReveal>
             <TextReveal delay={0.8}>
               <div className="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-100">
                 <Typewriter 
-                  text="Web Developer Wrocław" 
+                  text="Michał Paśko - Freelancer Programista" 
                   delay={1.2}
                   speed={0.08}
                 />
@@ -83,8 +81,11 @@ export const AnimatedHeroSection = () => {
 
           {/* Subtitle */}
           <TextReveal delay={1.5} direction="up">
-            <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
-              Tworzę profesjonalne strony internetowe, które sprzedają
+            <p className="text-xl md:text-2xl mb-2 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              Nowoczesne strony internetowe i aplikacje webowe
+            </p>
+            <p className="text-lg mb-8 text-blue-100 max-w-2xl mx-auto">
+              Next.js 15 • React • TypeScript • 10+ lat doświadczenia
             </p>
           </TextReveal>
 
