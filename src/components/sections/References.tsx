@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { GradientText, BorderBeam } from "@/components/ui/magic-ui";
 
 interface ReferenceProps {
   name: string;
@@ -70,18 +71,19 @@ export const References = () => {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
-          Co mówią klienci
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+          <GradientText>Co mówią klienci</GradientText>
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {references.map((reference, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="relative bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100"
             >
+              <BorderBeam />
               <div className="flex items-center mb-4">
-                <div className="mr-4 relative w-16 h-16 overflow-hidden rounded-full border-2 border-blue-500">
+                <div className="mr-4 relative w-16 h-16 overflow-hidden rounded-full border-2 border-primary/20">
                   <Image
                     src={reference.image}
                     alt={reference.name}
@@ -90,11 +92,13 @@ export const References = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">{reference.name}</h3>
-                  <p className="text-gray-600 text-sm">{reference.company}</p>
+                  <h3 className="font-semibold text-lg text-slate-800">
+                    {reference.name}
+                  </h3>
+                  <p className="text-slate-600 text-sm">{reference.company}</p>
                 </div>
-              </div>{" "}
-              <p className="text-gray-700 italic">
+              </div>
+              <p className="text-slate-700 italic leading-relaxed">
                 &ldquo;{reference.content}&rdquo;
               </p>
             </div>
