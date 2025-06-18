@@ -51,48 +51,9 @@ Struktura katalogów jest oparta o najlepsze praktyki dla aplikacji Next.js:
 - `npm run start`: Uruchamia zbudowaną aplikację.
 - `npm run lint`: Uruchamia analizę kodu za pomocą ESLint.
 
-## GitHub & Deployment Setup
+## Deployment
 
-### Utworzenie repozytorium GitHub
-
-1. Utwórz nowe repozytorium na GitHub:
-
-   ```bash
-   # Opcja 1: Poprzez GitHub CLI (jeśli zainstalowane)
-   gh repo create paskomichal-next --public --description "Portfolio i strona biznesowa Michała Paśko"
-
-   # Opcja 2: Ręcznie przez https://github.com/new
-   ```
-
-2. Połącz lokalne repozytorium z GitHub:
-
-   ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/paskomichal-next.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-### Deployment na Vercel
-
-1. **Automatyczny deployment z GitHub:**
-
-   - Zaloguj się na [Vercel](https://vercel.com)
-   - Kliknij "New Project"
-   - Wybierz repozytorium GitHub
-   - Vercel automatycznie wykryje Next.js i skonfiguruje build
-
-2. **Konfiguracja domeny:**
-
-   - W panelu Vercel przejdź do Settings > Domains
-   - Dodaj swoją domenę (np. paskomichal.pl)
-   - Skonfiguruj DNS zgodnie z instrukcjami Vercel
-
-3. **Zmienne środowiskowe (jeśli potrzebne):**
-
-   ```bash
-   # W panelu Vercel: Settings > Environment Variables
-   NODE_ENV=production
-   ```
+Projekt jest wdrażany na platformie Vercel i automatycznie budowany po każdym pushu do gałęzi `main`.
 
 ### Pre-commit Hooks
 
@@ -101,7 +62,7 @@ Projekt wykorzystuje Husky i lint-staged do automatycznej kontroli jakości kodu
 - **Pre-commit**: Automatyczne formatowanie i linting
 - **Commit-msg**: Walidacja konwencjonalnych commitów
 
-#### Przykłady poprawnych commitów:
+#### Przykłady poprawnych commitów
 
 ```bash
 git commit -m "feat: dodanie animowanej sekcji hero"
