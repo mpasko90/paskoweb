@@ -4,7 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
-import { PersonBusinessSchema } from "@/components/seo/JsonLdSchema";
+import { PersonBusinessSchema } from "@/components/seo/EnhancedJsonLdSchema";
 
 import "./globals.css";
 
@@ -17,21 +17,29 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://paskomichal.pl"),
   title: {
-    default: "Michał Paśko - Web Developer Wrocław | Tworzenie Stron Internetowych",
+    default: "Web Developer Wrocław | Michał Paśko - Tworzenie Stron Internetowych",
     template: "%s | Michał Paśko - Web Developer Wrocław",
   },
   description:
-    "Profesjonalne tworzenie stron internetowych i pomoc komputerowa we Wrocławiu. Doświadczony web developer, freelancer z 10+ lat doświadczenia.",
+    "Web Developer Wrocław ⭐ Michał Paśko - Freelancer z 10+ lat doświadczenia. Nowoczesne strony internetowe Next.js, React, TypeScript. Tworzenie stron www, sklepy online, aplikacje webowe. Konkurencyjne ceny ✅",
   generator: "Next.js",
-  applicationName: "Michał Paśko - Web Developer",
+  applicationName: "Michał Paśko - Web Developer Wrocław",
   referrer: "origin-when-cross-origin",
   keywords: [
     "web developer wrocław",
-    "tworzenie stron internetowych",
-    "pomoc komputerowa",
-    "freelancer",
+    "tworzenie stron internetowych wrocław",
+    "programista wrocław",
+    "freelancer programista",
+    "strony internetowe wrocław",
+    "next.js developer",
+    "react developer wrocław",
+    "typescript developer",
+    "sklepy internetowe wrocław",
+    "aplikacje webowe",
+    "michał paśko",
+    "paskomichal"
   ],
-  authors: [{ name: "Michał Paśko" }],
+  authors: [{ name: "Michał Paśko", url: "https://paskomichal.pl" }],
   creator: "Michał Paśko",
   publisher: "Michał Paśko",
   formatDetection: {
@@ -44,9 +52,9 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     url: "https://paskomichal.pl",
     siteName: "Michał Paśko - Web Developer Wrocław",
-    title: "Michał Paśko - Web Developer Wrocław | Tworzenie Stron Internetowych",
+    title: "Web Developer Wrocław | Michał Paśko - Tworzenie Stron Internetowych",
     description:
-      "Profesjonalne tworzenie stron internetowych i pomoc komputerowa we Wrocławiu. Doświadczony web developer, freelancer z 10+ lat doświadczenia.",
+      "Web Developer Wrocław ⭐ Michał Paśko - Freelancer z 10+ lat doświadczenia. Nowoczesne strony internetowe Next.js, React, TypeScript. Konkurencyjne ceny ✅",
     images: [
       {
         url: "/images/og-image.webp",
