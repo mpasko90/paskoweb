@@ -12,12 +12,13 @@ Aplikacja została zaprojektowana z myślą o wydajności, skalowalności i opty
 - **Komponenty UI**: [Shadcn/UI](https://ui.shadcn.com/)
 - **Linting**: [ESLint](https://eslint.org/)
 - **Formatowanie kodu**: [Prettier](https://prettier.io/)
+- **Monitorowanie wydajności**: [Vercel Speed Insights](https://vercel.com/docs/speed-insights)
 
 ### Struktura Projektu
 
 Struktura katalogów jest oparta o najlepsze praktyki dla aplikacji Next.js:
 
-```
+```text
 /public
   /images         # Zoptymalizowane zasoby graficzne (WebP)
 /src
@@ -29,20 +30,22 @@ Struktura katalogów jest oparta o najlepsze praktyki dla aplikacji Next.js:
 
 ## Uruchomienie Projektu
 
-1.  **Instalacja zależności:**
+1. **Instalacja zależności:**
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
-2.  **Konfiguracja zmiennych środowiskowych:**
-    Utwórz plik `.env.local` na podstawie `.env.example` (jeśli istnieje) i uzupełnij wymagane klucze API.
+2. **Konfiguracja zmiennych środowiskowych:**
+   Utwórz plik `.env.local` na podstawie `.env.example` (jeśli istnieje) i uzupełnij wymagane klucze API.
 
-3.  **Uruchomienie serwera deweloperskiego:**
-    ```bash
-    npm run dev
-    ```
-    Aplikacja będzie dostępna pod adresem [http://localhost:3000](http://localhost:3000).
+3. **Uruchomienie serwera deweloperskiego:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Aplikacja będzie dostępna pod adresem [http://localhost:3000](http://localhost:3000).
 
 ## Dostępne Skrypty
 
@@ -54,6 +57,16 @@ Struktura katalogów jest oparta o najlepsze praktyki dla aplikacji Next.js:
 ## Deployment
 
 Projekt jest wdrażany na platformie Vercel i automatycznie budowany po każdym pushu do gałęzi `main`.
+
+### Monitorowanie Wydajności
+
+Aplikacja wykorzystuje Vercel Speed Insights do zbierania metryk wydajności w czasie rzeczywistym:
+
+- **Core Web Vitals**: Monitoring kluczowych metryk UX
+- **Real User Monitoring (RUM)**: Dane od rzeczywistych użytkowników
+- **Performance Analytics**: Szczegółowe raporty wydajności
+
+Metryki są automatycznie zbierane po wdrożeniu i dostępne w panelu Vercel.
 
 ### Pre-commit Hooks
 
