@@ -17,11 +17,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://paskomichal.pl"),
   title: {
-    default: "Web Developer Wrocław | Michał Paśko - Tworzenie Stron Internetowych",
+    default:
+      "Web Developer Wrocław | Michał Paśko - Tworzenie Stron Internetowych",
     template: "%s | Michał Paśko - Web Developer Wrocław",
   },
   description:
-    "Web Developer Wrocław ⭐ Michał Paśko - Freelancer z 10+ lat doświadczenia. Nowoczesne strony internetowe Next.js, React, TypeScript. Tworzenie stron www, sklepy online, aplikacje webowe. Konkurencyjne ceny ✅",
+    "Web Developer Wrocław ⭐ Michał Paśko - Absolwent informatyki z 4-letnim doświadczeniem. WordPress, Next.js, React. Strony internetowe, aplikacje webowe, pomoc komputerowa. Freelancer ✅",
   generator: "Next.js",
   applicationName: "Michał Paśko - Web Developer Wrocław",
   referrer: "origin-when-cross-origin",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     "sklepy internetowe wrocław",
     "aplikacje webowe",
     "michał paśko",
-    "paskomichal"
+    "paskomichal",
   ],
   authors: [{ name: "Michał Paśko", url: "https://paskomichal.pl" }],
   creator: "Michał Paśko",
@@ -52,7 +53,8 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     url: "https://paskomichal.pl",
     siteName: "Michał Paśko - Web Developer Wrocław",
-    title: "Web Developer Wrocław | Michał Paśko - Tworzenie Stron Internetowych",
+    title:
+      "Web Developer Wrocław | Michał Paśko - Tworzenie Stron Internetowych",
     description:
       "Web Developer Wrocław ⭐ Michał Paśko - Freelancer z 10+ lat doświadczenia. Nowoczesne strony internetowe Next.js, React, TypeScript. Konkurencyjne ceny ✅",
     images: [
@@ -87,9 +89,7 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<RootLayoutProps>) {
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="pl" className={inter.variable}>
       <body className={inter.className}>

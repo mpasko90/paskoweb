@@ -5,7 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { AnimatedGradient } from "@/components/ui/animated-gradient";
-import { FloatingElements, GlowingOrb } from "@/components/ui/floating-elements";
+import {
+  FloatingElements,
+  GlowingOrb,
+} from "@/components/ui/floating-elements";
 import { TextReveal, Typewriter } from "@/components/ui/text-reveal";
 
 export const AnimatedHeroSection = () => {
@@ -14,22 +17,22 @@ export const AnimatedHeroSection = () => {
       {/* Animated Background */}
       <AnimatedGradient className="absolute inset-0">
         {/* Floating Orbs */}
-        <GlowingOrb 
-          size="lg" 
-          color="blue" 
-          className="absolute top-20 left-10 opacity-30" 
+        <GlowingOrb
+          size="lg"
+          color="blue"
+          className="absolute top-20 left-10 opacity-30"
         />
-        <GlowingOrb 
-          size="md" 
-          color="purple" 
-          className="absolute top-40 right-20 opacity-40" 
+        <GlowingOrb
+          size="md"
+          color="purple"
+          className="absolute top-40 right-20 opacity-40"
         />
-        <GlowingOrb 
-          size="sm" 
-          color="pink" 
-          className="absolute bottom-20 left-1/4 opacity-25" 
+        <GlowingOrb
+          size="sm"
+          color="pink"
+          className="absolute bottom-20 left-1/4 opacity-25"
         />
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLW9wYWNpdHk9IjAuMDUiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIiAvPgo8L3N2Zz4=')] opacity-20" />
       </AnimatedGradient>
@@ -59,7 +62,8 @@ export const AnimatedHeroSection = () => {
                 className="relative rounded-full ring-4 ring-white/20 backdrop-blur-sm"
               />
             </motion.div>
-          </FloatingElements>          {/* Main Heading with Typewriter Effect */}
+          </FloatingElements>{" "}
+          {/* Main Heading with Typewriter Effect */}
           <div className="mb-6">
             <TextReveal delay={0.5}>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
@@ -70,25 +74,23 @@ export const AnimatedHeroSection = () => {
             </TextReveal>
             <TextReveal delay={0.8}>
               <div className="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-100">
-                <Typewriter 
-                  text="Michał Paśko - Freelancer Programista" 
+                <Typewriter
+                  text="Michał Paśko - Freelancer Programista"
                   delay={1.2}
                   speed={0.08}
                 />
               </div>
             </TextReveal>
           </div>
-
           {/* Subtitle */}
           <TextReveal delay={1.5} direction="up">
             <p className="text-xl md:text-2xl mb-2 text-gray-200 max-w-3xl mx-auto leading-relaxed">
               Nowoczesne strony internetowe i aplikacje webowe
-            </p>
+            </p>{" "}
             <p className="text-lg mb-8 text-blue-100 max-w-2xl mx-auto">
-              Next.js 15 • React • TypeScript • 10+ lat doświadczenia
+              WordPress • Next.js • React • 4+ lata doświadczenia
             </p>
           </TextReveal>
-
           {/* CTA Buttons */}
           <TextReveal delay={2} direction="up">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -106,7 +108,7 @@ export const AnimatedHeroSection = () => {
                   </Link>
                 </Button>
               </motion.div>
-              
+
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -117,14 +119,11 @@ export const AnimatedHeroSection = () => {
                   variant="outline"
                   className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 backdrop-blur-sm shadow-xl px-8 py-4 text-lg font-semibold"
                 >
-                  <Link href="/portfolio">
-                    Zobacz moje prace
-                  </Link>
+                  <Link href="/portfolio">Zobacz moje prace</Link>
                 </Button>
               </motion.div>
             </div>
           </TextReveal>
-
           {/* Scroll Indicator */}
           <TextReveal delay={2.5}>
             <motion.div

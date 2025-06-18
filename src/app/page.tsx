@@ -1,14 +1,26 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { AnimatedHeroSection } from "@/components/sections/AnimatedHeroSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
 
-const LazyReferences = dynamic(() => import('@/components/sections/References').then(mod => ({ default: mod.References })), {
-  loading: () => <div className="min-h-[300px] animate-pulse bg-gray-100" />,
-});
+const LazyReferences = dynamic(
+  () =>
+    import("@/components/sections/References").then((mod) => ({
+      default: mod.References,
+    })),
+  {
+    loading: () => <div className="min-h-[300px] animate-pulse bg-gray-100" />,
+  }
+);
 
 export default function HomePage() {
   return (
@@ -25,26 +37,30 @@ export default function HomePage() {
             </h2>
             <div className="prose prose-lg mx-auto text-gray-600">
               <p className="text-lg leading-relaxed mb-6">
-                Jako doświadczony <strong>web developer z Wrocławia</strong> pomagam firmom i przedsiębiorcom 
-                tworzyć profesjonalne strony internetowe, które przyciągają klientów i zwiększają sprzedaż.
+                Jako doświadczony <strong>web developer z Wrocławia</strong>{" "}
+                pomagam firmom i przedsiębiorcom tworzyć profesjonalne strony
+                internetowe, które przyciągają klientów i zwiększają sprzedaż.
               </p>
               <p className="text-base leading-relaxed mb-8">
-                Specjalizuję się w najnowszych technologiach webowych jak <strong>Next.js 15, React i TypeScript</strong>, 
-                co gwarantuje wysoką wydajność, bezpieczeństwo i łatwość zarządzania Twoją stroną.
+                Specjalizuję się w{" "}
+                <strong>WordPress i nowoczesnych technologiach</strong> jak
+                Next.js i React, co gwarantuje wysoką wydajność, bezpieczeństwo
+                i łatwość zarządzania Twoją stroną. Jestem absolwentem
+                informatyki WSB Wrocław z certyfikatami Coursera.
               </p>
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 text-sm">
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <span className="text-green-500">✅</span>
-                  <span>10+ lat doświadczenia</span>
+                  <span>4+ lata doświadczenia</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-green-500">✅</span>
-                  <span>50+ projektów</span>
+                  <span>WordPress & Next.js</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-green-500">✅</span>
-                  <span>Next.js, React, TypeScript</span>
+                  <span>Absolwent informatyki WSB</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-green-500">✅</span>
@@ -68,17 +84,29 @@ export default function HomePage() {
               Usługi Web Development Wrocław
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Kompleksowe usługi tworzenia stron internetowych i wsparcia technicznego dla firm we Wrocławiu i całej Polsce
+              Kompleksowe usługi tworzenia stron internetowych i wsparcia
+              technicznego dla firm we Wrocławiu i całej Polsce
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
             {/* Tworzenie stron internetowych */}
             <Card className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-blue-500">
               <CardHeader>
                 <CardTitle className="text-blue-600 flex items-center gap-3 text-2xl">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
                   </svg>
                   Tworzenie Stron Internetowych
                 </CardTitle>
@@ -86,22 +114,35 @@ export default function HomePage() {
               <CardContent>
                 <CardDescription className="text-base text-gray-600 mb-6">
                   <p className="mb-4">
-                    Profesjonalne <strong>tworzenie stron internetowych Wrocław</strong> z wykorzystaniem najnowszych technologii:
+                    Profesjonalne{" "}
+                    <strong>tworzenie stron internetowych Wrocław</strong> z
+                    wykorzystaniem najnowszych technologii:
                   </p>
                   <ul className="list-disc list-inside space-y-2 marker:text-blue-500 mb-6">
-                    <li><strong>Strony wizytówkowe</strong> - od 2500 zł</li>
-                    <li><strong>Strony firmowe</strong> - od 4000 zł</li>
-                    <li><strong>Sklepy internetowe</strong> - od 6000 zł</li>
-                    <li><strong>Aplikacje webowe</strong> - wycena indywidualna</li>
+                    <li>
+                      <strong>Strony wizytówkowe WordPress</strong> - od 2000 zł
+                    </li>
+                    <li>
+                      <strong>Strony firmowe</strong> - od 3500 zł
+                    </li>
+                    <li>
+                      <strong>Aplikacje Next.js</strong> - od 5000 zł
+                    </li>
+                    <li>
+                      <strong>Modernizacja istniejących stron</strong> - wycena
+                      indywidualna
+                    </li>
                   </ul>
-                  
+
                   <div className="bg-blue-50 p-4 rounded-lg mb-4">
-                    <h4 className="font-semibold text-blue-800 mb-2">Technologie:</h4>
+                    <h4 className="font-semibold text-blue-800 mb-2">
+                      Technologie:
+                    </h4>
                     <p className="text-sm text-blue-700">
-                      Next.js 15, React 19, TypeScript, Tailwind CSS, Vercel
+                      WordPress, Next.js, React, TypeScript, Astro.js, Bootstrap
                     </p>
                   </div>
-                  
+
                   <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
                     <div>🚀 Core Web Vitals &gt; 90</div>
                     <div>📱 Pełna responsywność</div>
@@ -114,8 +155,19 @@ export default function HomePage() {
                   className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group"
                 >
                   Zobacz szczegóły i cennik
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </Link>
               </CardContent>
@@ -125,8 +177,19 @@ export default function HomePage() {
             <Card className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-green-500">
               <CardHeader>
                 <CardTitle className="text-green-600 flex items-center gap-3 text-2xl">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
                   </svg>
                   Pogotowie Komputerowe Wrocław
                 </CardTitle>
@@ -134,7 +197,8 @@ export default function HomePage() {
               <CardContent>
                 <CardDescription className="text-base text-gray-600 mb-6">
                   <p className="mb-4">
-                    Kompleksowe usługi IT dla firm i osób prywatnych we Wrocławiu:
+                    Kompleksowe usługi IT dla firm i osób prywatnych we
+                    Wrocławiu:
                   </p>
                   <ul className="list-disc list-inside space-y-2 marker:text-green-500 mb-6">
                     <li>Naprawa komputerów i laptopów</li>
@@ -144,14 +208,16 @@ export default function HomePage() {
                     <li>Przywracanie danych z dysków</li>
                     <li>Konsultacje IT i modernizacja</li>
                   </ul>
-                  
+
                   <div className="bg-green-50 p-4 rounded-lg mb-4">
-                    <h4 className="font-semibold text-green-800 mb-2">Dojazd do klienta:</h4>
+                    <h4 className="font-semibold text-green-800 mb-2">
+                      Dojazd do klienta:
+                    </h4>
                     <p className="text-sm text-green-700">
                       Wrocław i okolice • Szybka diagnoza • Transparentne ceny
                     </p>
                   </div>
-                  
+
                   <div className="flex items-center gap-4 text-sm">
                     <span className="flex items-center gap-1">
                       <span className="w-2 h-2 bg-green-500 rounded-full"></span>
@@ -168,8 +234,19 @@ export default function HomePage() {
                   className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-colors group"
                 >
                   Umów konsultację
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </Link>
               </CardContent>
@@ -189,25 +266,59 @@ export default function HomePage() {
                 </h2>
                 <div className="prose prose-lg text-gray-600">
                   <p className="text-lg leading-relaxed mb-4">
-                    Jestem <strong>Michał Paśko</strong> - web developer z Wrocławia z ponad 10-letnim 
-                    doświadczeniem w tworzeniu stron internetowych i aplikacji webowych.
+                    Jestem <strong>Michał Paśko</strong> - web developer z
+                    Wrocławia z 4-letnim doświadczeniem w tworzeniu stron
+                    internetowych i aplikacji webowych.
                   </p>
                   <p className="mb-6">
-                    Moja specjalizacja to nowoczesne technologie frontendowe, które gwarantują 
-                    wysoką wydajność i doskonałe doświadczenia użytkowników.
+                    Swoją przygodę z IT rozpocząłem w 2020 roku, a od 2022
+                    zajmuję się tym zawodowo. Obecnie pracuję jako WordPress
+                    Developer w Dzielciuch oraz jako Junior Frontend Developer w
+                    Militaria.pl.
                   </p>
-                  
+
                   <div className="bg-gray-50 p-6 rounded-lg mb-6">
-                    <h3 className="font-semibold text-gray-800 mb-3">Moja specjalizacja:</h3>
+                    <h3 className="font-semibold text-gray-800 mb-3">
+                      Moja specjalizacja:
+                    </h3>
                     <ul className="space-y-2 text-sm">
-                      <li>• <strong>Next.js 15</strong> z App Router</li>
-                      <li>• <strong>React 19</strong> i TypeScript</li>
-                      <li>• <strong>Tailwind CSS</strong> i Shadcn/UI</li>
-                      <li>• <strong>Vercel</strong> i cloud deployment</li>
+                      <li>
+                        • <strong>WordPress</strong> - niestandardowe moduły i
+                        optymalizacja
+                      </li>
+                      <li>
+                        • <strong>Next.js</strong> i React z TypeScript
+                      </li>
+                      <li>
+                        • <strong>Frontend Development</strong> - HTML, CSS,
+                        JavaScript
+                      </li>
+                      <li>
+                        • <strong>Astro.js</strong> i nowoczesne frameworki
+                      </li>
                     </ul>
                   </div>
-                  
-                  <h3 className="font-semibold text-gray-800 mb-3">Dlaczego warto ze mną współpracować?</h3>
+
+                  <div className="bg-blue-50 p-4 rounded-lg mb-6">
+                    <h4 className="font-semibold text-blue-800 mb-2">
+                      Wykształcenie i certyfikaty:
+                    </h4>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Licencjat Informatyki - WSB Wrocław (2020-2023)</li>
+                      <li>
+                        • Specjalizacja: Grafika komputerowa i technologie
+                        multimedialne
+                      </li>
+                      <li>
+                        • Introduction to Front-End Development - Coursera
+                      </li>
+                      <li>• Version Control - Coursera</li>
+                    </ul>
+                  </div>
+
+                  <h3 className="font-semibold text-gray-800 mb-3">
+                    Dlaczego warto ze mną współpracować?
+                  </h3>
                   <div className="grid grid-cols-1 gap-2 text-sm">
                     <div className="flex items-center gap-2">
                       <span className="text-blue-500">✓</span>
@@ -232,7 +343,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="text-center">
                 <div className="relative inline-block">
                   <Image
@@ -244,7 +355,7 @@ export default function HomePage() {
                     priority
                   />
                   <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">
-                    10+ lat doświadczenia
+                    4+ lata doświadczenia
                   </div>
                 </div>
               </div>
@@ -253,10 +364,140 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Portfolio Section - Prawdziwe projekty */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Moje Realizacje
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Przykłady moich prac - strony internetowe stworzone dla
+              rzeczywistych klientów
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* MC Klima */}
+            <Card className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="text-gray-800 text-xl">
+                  MC Klima - Montaż Klimatyzacji
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600 mb-4">
+                  <p className="mb-3">
+                    Strona wizytówkowa dla firmy montażu klimatyzacji we
+                    Wrocławiu. Stworzona w WordPress z działającym formularzem
+                    kontaktowym.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">
+                      WordPress
+                    </span>
+                    <span className="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">
+                      Responsive
+                    </span>
+                    <span className="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">
+                      SEO
+                    </span>
+                  </div>
+                  <a
+                    href="https://mcklima.pl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+                  >
+                    Zobacz stronę live
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            {/* Portfolio własne */}
+            <Card className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="text-gray-800 text-xl">
+                  Paskomichal.pl - Portfolio
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600 mb-4">
+                  <p className="mb-3">
+                    Moja strona portfolio stworzona od podstaw w HTML z
+                    biblioteką Bootstrap. Dynamiczne elementy w JavaScript.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded">
+                      HTML
+                    </span>
+                    <span className="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">
+                      Bootstrap
+                    </span>
+                    <span className="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">
+                      JavaScript
+                    </span>
+                  </div>
+                  <span className="text-green-600 font-semibold">
+                    ✓ Aktualna strona
+                  </span>
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            {/* Praca zawodowa */}
+            <Card className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="text-gray-800 text-xl">
+                  Dzielciuch Platform
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600 mb-4">
+                  <p className="mb-3">
+                    Platforma e-commerce, nad którą pracuję jako WordPress
+                    Developer. Niestandardowe moduły w React.js.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">
+                      WordPress
+                    </span>
+                    <span className="px-2 py-1 bg-cyan-100 text-cyan-800 text-xs rounded">
+                      React.js
+                    </span>
+                    <span className="px-2 py-1 bg-red-100 text-red-800 text-xs rounded">
+                      E-commerce
+                    </span>
+                  </div>
+                  <span className="text-blue-600 font-semibold">
+                    💼 Praca zawodowa (2023-)
+                  </span>
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <LazyReferences />
-      
+
       <FAQSection />
-      
+
       <CTASection />
     </main>
   );
