@@ -70,20 +70,3 @@ git commit -m "fix: naprawa responsywności na mobile"
 git commit -m "docs: aktualizacja README"
 git commit -m "style: formatowanie kodu"
 ```
-
-## Deployment Commands
-
-```bash
-# Development
-npm run dev
-
-# Production build
-npm run build
-npm run start
-
-# Linting & formatowanie
-npm run lint
-npm run lint:fix
-npm run format
-npm run type-check
-```
