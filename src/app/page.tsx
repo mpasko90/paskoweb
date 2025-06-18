@@ -11,6 +11,7 @@ import {
 import { AnimatedHeroSection } from "@/components/sections/AnimatedHeroSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
+import { BorderBeam, GradientText } from "@/components/ui/magic-ui";
 
 const LazyReferences = dynamic(
   () =>
@@ -81,7 +82,9 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Usługi Web Development Wrocław
+              <GradientText from="#2563eb" to="#1e40af">
+                Usługi Web Development Wrocław
+              </GradientText>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Kompleksowe usługi tworzenia stron internetowych i wsparcia
@@ -91,86 +94,96 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
             {/* Tworzenie stron internetowych */}
-            <Card className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-blue-500">
-              <CardHeader>
-                <CardTitle className="text-blue-600 flex items-center gap-3 text-2xl">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                  Tworzenie Stron Internetowych
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base text-gray-600 mb-6">
-                  <p className="mb-4">
-                    Profesjonalne{" "}
-                    <strong>tworzenie stron internetowych Wrocław</strong> z
-                    wykorzystaniem najnowszych technologii:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 marker:text-blue-500 mb-6">
-                    <li>
-                      <strong>Strony wizytówkowe WordPress</strong> - od 2000 zł
-                    </li>
-                    <li>
-                      <strong>Strony firmowe</strong> - od 3500 zł
-                    </li>
-                    <li>
-                      <strong>Aplikacje Next.js</strong> - od 5000 zł
-                    </li>
-                    <li>
-                      <strong>Modernizacja istniejących stron</strong> - wycena
-                      indywidualna
-                    </li>
-                  </ul>
-
-                  <div className="bg-blue-50 p-4 rounded-lg mb-4">
-                    <h4 className="font-semibold text-blue-800 mb-2">
-                      Technologie:
-                    </h4>
-                    <p className="text-sm text-blue-700">
-                      WordPress, Next.js, React, TypeScript, Astro.js, Bootstrap
+            <Card className="relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-blue-500 overflow-hidden">
+              <BorderBeam
+                className="absolute inset-0 z-0"
+                duration={20}
+                colorFrom="#2563eb"
+                colorTo="#3b82f6"
+              />
+              <div className="relative z-10">
+                <CardHeader>
+                  <CardTitle className="text-blue-600 flex items-center gap-3 text-2xl">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-8 w-8"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={1.5}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Tworzenie Stron Internetowych
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base text-gray-600 mb-6">
+                    <p className="mb-4">
+                      Profesjonalne{" "}
+                      <strong>tworzenie stron internetowych Wrocław</strong> z
+                      wykorzystaniem najnowszych technologii:
                     </p>
-                  </div>
+                    <ul className="list-disc list-inside space-y-2 marker:text-blue-500 mb-6">
+                      <li>
+                        <strong>Strony wizytówkowe WordPress</strong> - od 2000
+                        zł
+                      </li>
+                      <li>
+                        <strong>Strony firmowe</strong> - od 3500 zł
+                      </li>
+                      <li>
+                        <strong>Aplikacje Next.js</strong> - od 5000 zł
+                      </li>
+                      <li>
+                        <strong>Modernizacja istniejących stron</strong> -
+                        wycena indywidualna
+                      </li>
+                    </ul>
 
-                  <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
-                    <div>🚀 Core Web Vitals &gt; 90</div>
-                    <div>📱 Pełna responsywność</div>
-                    <div>🔍 Optymalizacja SEO</div>
-                    <div>⚡ Szybkość ładowania</div>
-                  </div>
-                </CardDescription>
-                <Link
-                  href="/tworzenie-stron"
-                  className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group"
-                >
-                  Zobacz szczegóły i cennik
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    <div className="bg-blue-50 p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-blue-800 mb-2">
+                        Technologie:
+                      </h4>
+                      <p className="text-sm text-blue-700">
+                        WordPress, Next.js, React, TypeScript, Astro.js,
+                        Bootstrap
+                      </p>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
+                      <div>🚀 Core Web Vitals &gt; 90</div>
+                      <div>📱 Pełna responsywność</div>
+                      <div>🔍 Optymalizacja SEO</div>
+                      <div>⚡ Szybkość ładowania</div>
+                    </div>
+                  </CardDescription>
+                  <Link
+                    href="/tworzenie-stron"
+                    className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </Link>
-              </CardContent>
+                    Zobacz szczegóły i cennik
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </Link>
+                </CardContent>
+              </div>
             </Card>
 
             {/* Pomoc komputerowa */}
