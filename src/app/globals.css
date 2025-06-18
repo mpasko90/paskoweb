@@ -229,6 +229,15 @@ body {
   }
 }
 
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 /* Utility classes */
 .animate-gradient-x {
   animation: gradient-x 15s ease infinite;
@@ -270,4 +279,8 @@ body {
 
 .animate-glow {
   animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s linear infinite;
 }

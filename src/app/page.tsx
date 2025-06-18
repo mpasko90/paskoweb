@@ -11,7 +11,11 @@ import {
 import { AnimatedHeroSection } from "@/components/sections/AnimatedHeroSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
-import { BorderBeam, GradientText } from "@/components/ui/magic-ui";
+import {
+  BorderBeam,
+  GradientText,
+  AnimatedShimmer,
+} from "@/components/ui/magic-ui";
 
 const LazyReferences = dynamic(
   () =>
@@ -33,10 +37,10 @@ export default function HomePage() {
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">
               Web Developer Wrocław - Nowoczesne Strony Internetowe
             </h2>
-            <div className="prose prose-lg mx-auto text-gray-600">
+            <div className="prose prose-lg mx-auto text-slate-600">
               <p className="text-lg leading-relaxed mb-6">
                 Jako doświadczony <strong>web developer z Wrocławia</strong>{" "}
                 pomagam firmom i przedsiębiorcom tworzyć profesjonalne strony
@@ -78,7 +82,7 @@ export default function HomePage() {
       </section>
 
       {/* Usługi Section - Rozszerzone SEO */}
-      <section id="uslugi" className="py-20 md:py-28 bg-gray-50">
+      <section id="uslugi" className="py-20 md:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -86,7 +90,7 @@ export default function HomePage() {
                 Usługi Web Development Wrocław
               </GradientText>
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Kompleksowe usługi tworzenia stron internetowych i wsparcia
               technicznego dla firm we Wrocławiu i całej Polsce
             </p>
@@ -94,7 +98,8 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
             {/* Tworzenie stron internetowych */}
-            <Card className="relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-blue-500 overflow-hidden">
+            <Card className="group relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-primary overflow-hidden">
+              <AnimatedShimmer />
               <BorderBeam
                 className="absolute inset-0 z-0"
                 duration={20}
@@ -103,7 +108,7 @@ export default function HomePage() {
               />
               <div className="relative z-10">
                 <CardHeader>
-                  <CardTitle className="text-blue-600 flex items-center gap-3 text-2xl">
+                  <CardTitle className="text-primary flex items-center gap-3 text-2xl">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-8 w-8"
@@ -187,9 +192,10 @@ export default function HomePage() {
             </Card>
 
             {/* Pomoc komputerowa */}
-            <Card className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-green-500">
+            <Card className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-emerald-500">
+              <AnimatedShimmer />
               <CardHeader>
-                <CardTitle className="text-green-600 flex items-center gap-3 text-2xl">
+                <CardTitle className="text-emerald-600 flex items-center gap-3 text-2xl">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8"
@@ -213,7 +219,7 @@ export default function HomePage() {
                     Kompleksowe usługi IT dla firm i osób prywatnych we
                     Wrocławiu:
                   </p>
-                  <ul className="list-disc list-inside space-y-2 marker:text-green-500 mb-6">
+                  <ul className="list-disc list-inside space-y-2 marker:text-emerald-500 mb-6">
                     <li>Naprawa komputerów i laptopów</li>
                     <li>Instalacja i konfiguracja oprogramowania</li>
                     <li>Konfiguracja sieci i routerów</li>
@@ -222,29 +228,29 @@ export default function HomePage() {
                     <li>Konsultacje IT i modernizacja</li>
                   </ul>
 
-                  <div className="bg-green-50 p-4 rounded-lg mb-4">
-                    <h4 className="font-semibold text-green-800 mb-2">
+                  <div className="bg-emerald-50 p-4 rounded-lg mb-4">
+                    <h4 className="font-semibold text-emerald-800 mb-2">
                       Dojazd do klienta:
                     </h4>
-                    <p className="text-sm text-green-700">
+                    <p className="text-sm text-emerald-700">
                       Wrocław i okolice • Szybka diagnoza • Transparentne ceny
                     </p>
                   </div>
 
                   <div className="flex items-center gap-4 text-sm">
                     <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                      <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
                       Dostępny 24/7
                     </span>
                     <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                      <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
                       Gwarancja serwisu
                     </span>
                   </div>
                 </CardDescription>
                 <Link
                   href="/pomoc-komputerowa"
-                  className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-colors group"
+                  className="inline-flex items-center text-emerald-600 font-semibold hover:text-emerald-700 transition-colors group"
                 >
                   Umów konsultację
                   <svg

@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { GradientText } from "@/components/ui/magic-ui";
 
 interface FAQItem {
   question: string;
@@ -69,13 +70,13 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 md:py-28 bg-gray-50">
+    <section className="py-20 md:py-28 bg-slate-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Najczęściej zadawane pytania
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <GradientText>Najczęściej zadawane pytania</GradientText>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Odpowiedzi na najważniejsze pytania dotyczące tworzenia stron
             internetowych i usług IT
           </p>
@@ -86,16 +87,16 @@ export default function FAQSection() {
             {faqData.map((item, index) => (
               <Card
                 key={index}
-                className="bg-white border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+                className="bg-white border border-slate-200 hover:shadow-lg hover:border-primary/20 transition-all duration-300"
               >
                 <CardHeader
                   className="cursor-pointer"
                   onClick={() => toggleItem(index)}
                 >
-                  <CardTitle className="text-left flex items-center justify-between text-lg text-gray-800">
+                  <CardTitle className="text-left flex items-center justify-between text-lg text-slate-800">
                     <span>{item.question}</span>
                     <svg
-                      className={`w-5 h-5 transition-transform duration-200 ${
+                      className={`w-5 h-5 transition-transform duration-200 text-primary ${
                         openItems.includes(index) ? "rotate-180" : ""
                       }`}
                       fill="none"
@@ -113,7 +114,7 @@ export default function FAQSection() {
                 </CardHeader>
                 {openItems.includes(index) && (
                   <CardContent className="pt-0">
-                    <CardDescription className="text-gray-600 text-base leading-relaxed">
+                    <CardDescription className="text-slate-600 text-base leading-relaxed">
                       {item.answer}
                     </CardDescription>
                   </CardContent>
