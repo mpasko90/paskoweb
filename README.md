@@ -30,6 +30,7 @@ Struktura katalogów jest oparta o najlepsze praktyki dla aplikacji Next.js:
 ## Uruchomienie Projektu
 
 1.  **Instalacja zależności:**
+
     ```bash
     npm install
     ```
@@ -55,14 +56,16 @@ Struktura katalogów jest oparta o najlepsze praktyki dla aplikacji Next.js:
 ### Utworzenie repozytorium GitHub
 
 1. Utwórz nowe repozytorium na GitHub:
+
    ```bash
    # Opcja 1: Poprzez GitHub CLI (jeśli zainstalowane)
    gh repo create paskomichal-next --public --description "Portfolio i strona biznesowa Michała Paśko"
-   
+
    # Opcja 2: Ręcznie przez https://github.com/new
    ```
 
 2. Połącz lokalne repozytorium z GitHub:
+
    ```bash
    git remote add origin https://github.com/YOUR_USERNAME/paskomichal-next.git
    git branch -M main
@@ -72,17 +75,20 @@ Struktura katalogów jest oparta o najlepsze praktyki dla aplikacji Next.js:
 ### Deployment na Vercel
 
 1. **Automatyczny deployment z GitHub:**
+
    - Zaloguj się na [Vercel](https://vercel.com)
    - Kliknij "New Project"
    - Wybierz repozytorium GitHub
    - Vercel automatycznie wykryje Next.js i skonfiguruje build
 
 2. **Konfiguracja domeny:**
+
    - W panelu Vercel przejdź do Settings > Domains
    - Dodaj swoją domenę (np. paskomichal.pl)
    - Skonfiguruj DNS zgodnie z instrukcjami Vercel
 
 3. **Zmienne środowiskowe (jeśli potrzebne):**
+
    ```bash
    # W panelu Vercel: Settings > Environment Variables
    NODE_ENV=production
@@ -96,6 +102,7 @@ Projekt wykorzystuje Husky i lint-staged do automatycznej kontroli jakości kodu
 - **Commit-msg**: Walidacja konwencjonalnych commitów
 
 #### Przykłady poprawnych commitów:
+
 ```bash
 git commit -m "feat: dodanie animowanej sekcji hero"
 git commit -m "fix: naprawa responsywności na mobile"
