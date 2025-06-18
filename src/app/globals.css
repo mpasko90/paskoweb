@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom CSS Variables - Matching paskomichal.pl color scheme */
 :root {
   --radius: 0.625rem;

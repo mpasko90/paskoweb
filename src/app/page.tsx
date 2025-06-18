@@ -8,7 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { AnimatedHeroSection } from "@/components/sections/AnimatedHeroSection";
+import { ModernHeroSection } from "@/components/sections/ModernHeroSection";
+import { ModernPortfolioSection } from "@/components/sections/ModernPortfolioSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
 import {
@@ -29,58 +30,62 @@ const LazyReferences = dynamic(
 
 export default function HomePage() {
   return (
-    <main className="overflow-hidden">
-      {/* Animated Hero Section */}
-      <AnimatedHeroSection />
-
-      {/* Wprowadzenie SEO Section */}
-      <section className="py-16 md:py-20 bg-white">
+    <main className="overflow-hidden pt-16">
+      {" "}
+      {/* Added pt-16 for fixed navigation */}
+      {/* Modern Hero Section */}
+      <ModernHeroSection />
+      {/* Modern Portfolio Section */}
+      <ModernPortfolioSection />
+      {/* Wprowadzenie SEO Section z nowoczesnym designem */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-white to-slate-50/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">
-              Web Developer Wrocław - Nowoczesne Strony Internetowe
-            </h2>
-            <div className="prose prose-lg mx-auto text-slate-600">
-              <p className="text-lg leading-relaxed mb-6">
-                Jako doświadczony <strong>web developer z Wrocławia</strong>{" "}
-                pomagam firmom i przedsiębiorcom tworzyć profesjonalne strony
-                internetowe, które przyciągają klientów i zwiększają sprzedaż.
-              </p>
-              <p className="text-base leading-relaxed mb-8">
-                Specjalizuję się w{" "}
-                <strong>WordPress i nowoczesnych technologiach</strong> jak
-                Next.js i React, co gwarantuje wysoką wydajność, bezpieczeństwo
-                i łatwość zarządzania Twoją stroną. Jestem absolwentem
-                informatyki WSB Wrocław z certyfikatami Coursera.
-              </p>
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">
+                Web Developer Wrocław - Nowoczesne Strony Internetowe
+              </h2>
+              <div className="prose prose-lg mx-auto text-slate-600">
+                <p className="text-lg leading-relaxed mb-6">
+                  Jako doświadczony <strong>web developer z Wrocławia</strong>{" "}
+                  pomagam firmom i przedsiębiorcom tworzyć profesjonalne strony
+                  internetowe, które przyciągają klientów i zwiększają sprzedaż.
+                </p>
+                <p className="text-base leading-relaxed mb-8">
+                  Specjalizuję się w{" "}
+                  <strong>WordPress i nowoczesnych technologiach</strong> jak
+                  Next.js i React, co gwarantuje wysoką wydajność,
+                  bezpieczeństwo i łatwość zarządzania Twoją stroną. Jestem
+                  absolwentem informatyki WSB Wrocław z certyfikatami Coursera.
+                </p>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-                <div className="flex items-center gap-2">
-                  <span className="text-green-500">✅</span>
-                  <span>4+ lata doświadczenia</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-green-500">✅</span>
-                  <span>WordPress & Next.js</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-green-500">✅</span>
-                  <span>Absolwent informatyki WSB</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-green-500">✅</span>
-                  <span>Pełna obsługa projektu</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-green-500">✅</span>
-                  <span>Wsparcie techniczne</span>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                  <div className="flex items-center gap-2">
+                    <span className="text-green-500">✅</span>
+                    <span>4+ lata doświadczenia</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-green-500">✅</span>
+                    <span>WordPress & Next.js</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-green-500">✅</span>
+                    <span>Absolwent informatyki WSB</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-green-500">✅</span>
+                    <span>Pełna obsługa projektu</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-green-500">✅</span>
+                    <span>Wsparcie techniczne</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Usługi Section - Rozszerzone SEO */}
       <section id="uslugi" className="py-20 md:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
@@ -273,7 +278,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* O mnie Section */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
@@ -382,7 +386,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Portfolio Section - Prawdziwe projekty */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
@@ -512,11 +515,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <LazyReferences />
-
       <FAQSection />
-
       <CTASection />
     </main>
   );
