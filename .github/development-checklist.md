@@ -2,13 +2,13 @@
 
 ## Setup projektu
 
-- [ ] Inicjalizacja Next.js 15 z TypeScript
-- [ ] Konfiguracja Tailwind CSS
-- [ ] Instalacja i konfiguracja Shadcn/UI
-- [ ] Setup ESLint i Prettier
-- [ ] Konfiguracja Husky i lint-staged
+- [x] Inicjalizacja Next.js 15 z TypeScript
+- [x] Konfiguracja Tailwind CSS
+- [x] Instalacja i konfiguracja Shadcn/UI
+- [x] Setup ESLint i Prettier
+- [x] Konfiguracja Husky i lint-staged
 - [ ] Utworzenie repozytorium GitHub
-- [ ] Połączenie z Vercel dla deploymentu
+- [x] Połączenie z Vercel dla deploymentu (konfiguracja gotowa)
 
 ## Konfiguracja SEO
 
