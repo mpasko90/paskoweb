@@ -101,106 +101,53 @@
    - React & TypeScript
    - Tailwind CSS
    - Shadcn/UI
-   - AI Integration
-   - **Vercel (dla podkreślenia wydajności)**
+   - Vercel (Hosting & Edge)
    ```
 
-5. **Case Studies (nowe):**
+### 4. Plan Rozbudowy Bloga (Nowa, szczegółowa sekcja)
 
-- Przykłady wykorzystania AI
-- Performance metrics (Lighthouse scores > 95)
-- Core Web Vitals scores
-- Porównanie z poprzednią stroną klienta (jeśli była na WordPress)
+**Cel:** Ugruntowanie pozycji jako eksperta w trzech kluczowych dziedzinach, przyciągnięcie ruchu organicznego na frazy long-tail i edukacja potencjalnych klientów.
 
-### 4. Performance & Technical Updates
+**Filary Contentowe (Content Pillars):**
 
-#### Core Web Vitals
+1. **Tworzenie Stron Internetowych:** Wszystko, co dotyczy projektowania, budowania i wdrażania nowoczesnych witryn.
+2. **Optymalizacja i Pozycjonowanie (SEO):** Wiedza na temat zwiększania widoczności w wyszukiwarkach, od technicznego SEO po content marketing.
+3. **Pomoc Komputerowa i Wsparcie IT:** Praktyczne porady dotyczące rozwiązywania problemów ze sprzętem i oprogramowaniem, z naciskiem na rynek lokalny (Rzeszów).
 
-- LCP < 2.5s
-- FID < 100ms
-- CLS < 0.1
+**Klastry Tematyczne (Topic Clusters) i Przykładowe Tematy:**
 
-#### Image Optimization
+- **Klaster 1: Strony dla małych firm (Filar: Tworzenie Stron)**
 
-- Next/Image component
-- WebP/AVIF format
-- Lazy loading
-- Responsive images
+  - "Twoja firma traci klientów przez złą stronę? 5 znaków, że potrzebujesz nowej witryny w 2024"
+  - "Ile kosztuje strona internetowa w 2024? Kompletny przewodnik po cenach i opcjach"
+  - "Next.js vs WordPress: Którą technologię wybrać dla strony firmowej? Obiektywne porównanie."
+  - "Jak prosta strona wizytówka zwiększyła zapytania o 300% - studium przypadku lokalnej firmy"
 
-#### Server Components
+- **Klaster 2: Optymalizacja i Pozycjonowanie (Filar: SEO)**
 
-- SEO-friendly rendering
-- Reduced client JS
-- Improved FCP
+  - "Lokalne SEO dla usługodawców: Jak zdobyć klientów z Twojej okolicy? Kompletny poradnik."
+  - "Core Web Vitals w praktyce: Jak przyspieszyć stronę na Next.js i dlaczego jest to kluczowe dla SEO?"
+  - "Audyt SEO strony internetowej krok po kroku. Znajdź i napraw błędy, które blokują Twój ranking."
+  - "Jak pisać teksty na stronę, które pokochają i użytkownicy, i Google? Wprowadzenie do SEO copywritingu."
 
-### 5. Local SEO Enhancement
+- **Klaster 3: Wsparcie Techniczne (Filar: Pomoc Komputerowa)**
+  - "Komputer wolno chodzi? 7 sprawdzonych sposobów na przyspieszenie systemu Windows w 15 minut."
+  - "Jak usunąć wirusa z komputera? Poradnik krok po kroku dla początkujących."
+  - "Odzyskiwanie danych z dysku - co robić, a czego unikać? Praktyczne wskazówki."
+  - "Pogotowie komputerowe Rzeszów - szybka pomoc z dojazdem do klienta. Kiedy warto wezwać specjalistę?"
 
-#### Google Business Profile
+**Harmonogram Publikacji:**
 
-- Aktualizacja usług 2024
-- Nowe zdjęcia projektów
-- Posts regularne z case studies
+- **Częstotliwość:** 1 artykuł tygodniowo, publikowany rotacyjnie z każdego filaru.
+- **Start:** Pierwszy tydzień po wdrożeniu nowej strategii.
+- **Przykładowy plan na pierwszy miesiąc:**
+  1. (Tworzenie Stron) "Ile kosztuje strona internetowa w 2024?..."
+  2. (SEO) "Lokalne SEO dla usługodawców..."
+  3. (Pomoc Komputerowa) "Pogotowie komputerowe Rzeszów..."
+  4. (Tworzenie Stron) "Next.js vs WordPress..."
 
-#### Local Content
+**Strategia Cross-Linkingu:**
 
-- Dedykowane podstrony dla dzielnic
-- Case studies lokalne
-- Local landmarks w contentcie
-
-### 6. Content Marketing Plan
-
-#### Blog Topics 2024
-
-1. "Next.js 15 vs Gatsby - co wybrać w 2024?"
-2. "AI w projektowaniu stron - przyszłość czy chwilowy trend?"
-3. "Core Web Vitals - jak osiągnąłem 100/100 w Lighthouse"
-4. "TypeScript w projektach webowych - case study"
-
-#### Newsletter
-
-- Tips & tricks dla przedsiębiorców
-- Nowości w web developmencie
-- Case studies i success stories
-
-## 📈 KPIs i Cele
-
-### Q1-Q2 2025
-
-- Zwiększenie organic traffic o 25%
-- CTR > 4.5% dla głównych fraz
-- Bounce rate < 40%
-- Avg. session duration > 2:30
-
-### Q3-Q4 2025
-
-- Top 3 pozycja dla "web developer wrocław"
-- 50+ backlinków z DR > 50
-- 100+ wizyt organicznych/msc
-- Konwersja > 3%
-
-## 🎯 Implementation Timeline
-
-### Immediate (Q1 2024)
-
-1. Aktualizacja meta tagów
-2. Wdrożenie nowego schema.org
-3. Optymalizacja Core Web Vitals
-
-### Short-term (Q2 2024)
-
-1. Nowe case studies
-2. Blog setup
-3. Local SEO updates
-
-### Mid-term (Q3-Q4 2024)
-
-1. Content expansion
-2. Backlink building
-3. AI features integration
-
-## 📝 Regular Updates
-
-- Weekly: Google Business Profile posts
-- Monthly: Case studies
-- Quarterly: SEO audit & adjustments
-- Semi-annually: Content strategy review
+- **Artykuły -> Strony Usługowe:** Każdy post będzie linkował do relevantnej strony usługi (np. `/tworzenie-stron`, `/pomoc-komputerowa`).
+- **Artykuły -> Artykuły:** Posty w ramach tego samego klastra będą do siebie nawzajem linkować, budując siłę tematyczną.
+- **Strony Usługowe -> Artykuły:** Strony usługowe będą zawierać sekcję "Baza Wiedzy" z linkami do najlepszych artykułów.
