@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
-import { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Metadata } from "next";
+import { Inter } from "next/font/google";
 
-import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
+import { Navigation } from "@/components/layout/Navigation";
 import { PersonBusinessSchema } from "@/components/seo/EnhancedJsonLdSchema";
 
 import "./globals.css";

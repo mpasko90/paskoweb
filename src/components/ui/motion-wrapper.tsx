@@ -1,13 +1,14 @@
 "use client";
 
-import { motion, Variants, Transition } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
+import { ReactNode } from "react";
 
 interface MotionDivProps {
-  children: React.ReactNode;
-  initial?: Variants | boolean;
-  whileInView?: Variants;
-  transition?: Transition;
-  viewport?: { once?: boolean; amount?: number };
+  children: ReactNode;
+  initial?: MotionProps["initial"];
+  whileInView?: MotionProps["whileInView"];
+  transition?: MotionProps["transition"];
+  viewport?: MotionProps["viewport"];
   className?: string;
 }
 
