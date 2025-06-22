@@ -1,0 +1,34 @@
+{
+  "recommendations": [
+    // === NIEZBĘDNE ===
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+    // === NEXT.JS & REACT ===
+    "ms-vscode.vscode-json",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-typescript-next",
+    // === UŻYTECZNE ===
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "gruntfuggly.todo-tree",
+    "ms-vscode.hexeditor",
+    // === GIT ===
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    // === MARKDOWN ===
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced",
+    // === COPILOT ===
+    "github.copilot",
+    "github.copilot-chat"
+  ],
+  "unwantedRecommendations": [
+    // Rozszerzenia, które mogą powodować konflikty
+    "ms-python.python",
+    "ms-dotnettools.csharp",
+    "ms-vscode.powershell"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "group": "build",
+      "problemMatcher": [
+        "$tsc-watch",
+        "$eslint-stylish"
+      ],
+      "isBackground": true,
+      "label": "npm: dev",
+      "detail": "next dev",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$tsc",
+        "$eslint-stylish"
+      ],
+      "label": "npm: build",
+      "detail": "next build"
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "group": "test",
+      "problemMatcher": "$eslint-stylish",
+      "label": "npm: lint",
+      "detail": "next lint"
+    },
+    {
+      "type": "npm",
+      "script": "lint:fix",
+      "group": "test",
+      "problemMatcher": "$eslint-stylish",
+      "label": "npm: lint:fix",
+      "detail": "next lint --fix"
+    },
+    {
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "prettier",
+        "--write",
+        "."
+      ],
+      "group": "build",
+      "label": "Format with Prettier",
+      "detail": "Format all files with Prettier",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "command": "git",
+      "args": [
+        "status"
+      ],
+      "group": "build",
+      "label": "Git Status",
+      "detail": "Show git status",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  // === OPTYMALIZACJA PAMIĘCI ===
+  "typescript.preferences.maxTsServerMemory": 8192,
+  "typescript.suggest.autoImports": "auto",
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  // === WYDAJNOŚĆ TYPESCRIPT ===
+  "typescript.validate.enable": true,
+  "typescript.format.enable": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.includeCompletionsForImportStatements": true,
+  // === ESLINT OPTYMALIZACJA ===
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [
+    "."
+  ],
+  // === PRETTIER ===
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  // === PLIKI DO WYKLUCZENIA ===
+  "files.exclude": {
+    "**/.git": true,
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.log": true,
+    "**/.mcp-memory.jsonl": true,
+    "**/temp_*": true
+  },
+  // === WYSZUKIWANIE ===
+  "search.exclude": {
+    "**/.git": true,
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/*.log": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/.mcp-memory.jsonl": true,
+    "**/temp_*": true
+  },
+  // === WATCHER OPTYMALIZACJA ===
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.next/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/*.log": true,
+    "**/.mcp-memory.jsonl": true,
+    "**/temp_*": true
+  },
+  // === NEXT.JS SPECYFICZNE ===
+  "typescript.preferences.quoteStyle": "double",
+  "javascript.preferences.quoteStyle": "double",
+  "emmet.includeLanguages": {
+    "typescript": "html",
+    "typescriptreact": "html"
+  },
+  // === TAILWIND CSS ===
+  "tailwindCSS.includeLanguages": {
+    "typescript": "html",
+    "typescriptreact": "html"
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  // === INNE OPTYMALIZACJE ===
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  // === LIVE SHARE ===
+  "liveshare.featureSet": "stable",
+  // === GIT ===
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.ignoreMissingGitWarning": true,
+  // === ROZSZERZENIA AFINITY (dla wydajności) ===
+  "extensions.experimental.affinity": {
+    "bradlc.vscode-tailwindcss": 1,
+    "ms-vscode.vscode-typescript-next": 1,
+    "esbenp.prettier-vscode": 1,
+    "dbaeumer.vscode-eslint": 1
+  }
+}
